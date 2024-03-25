@@ -28,7 +28,11 @@ public class ArrayList {
     }
 
     private void increaseItemsArray() {
-        // TODO impl
+        int[] newItemsArrays = new int[itemsArray.length * 2];
+        for (int i = 0; i < itemsArray.length; i++) {
+            newItemsArrays[i] = itemsArray[i];
+        }
+        itemsArray = newItemsArrays;
     }
 
     public int set(int index, int value) {
@@ -59,6 +63,10 @@ public class ArrayList {
             }
         }
         return -1;
+    }
+
+    public int size() {
+        return this.lastItemIndex + 1;
     }
 
     @Override

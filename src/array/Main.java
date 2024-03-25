@@ -23,5 +23,12 @@ public class Main {
         myList.remove(4);
         System.out.println("myList.remove(4);");
         System.out.println("myList = " + myList);
+
+        System.out.println("add 8 items");
+        for (int i = 0; i < 8; i++) {
+            myList.add(i);
+        }
+        System.out.println("myList = " + myList);
+        System.out.println("myList.size() = " + myList.size());
     }
 }
